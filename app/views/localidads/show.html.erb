@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @localidad.name %>
+</p>
+
+<p>
+  <strong>Interurbano:</strong>
+  <%= @localidad.interurbano %>
+</p>
+
+<p>
+  <strong>Clave nqn:</strong>
+  <%= @localidad.clave_nqn %>
+</p>
+
+<%= link_to 'Edit', edit_localidad_path(@localidad) %> |
+<%= link_to 'Back', localidads_path %>

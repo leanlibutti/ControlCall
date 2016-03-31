@@ -1,0 +1,122 @@
+<%if current_user.sector.nil?%>
+
+<div class="row"> 
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Ingresar Sector e Interno</h3>
+      </div>
+      <div class="panel-body">
+        <h4>Debe completar estos datos para poder acceder a las funciones del sistema</h4>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+          <form>
+           <div class="form-group">
+              <%= f.label :sector, "Sector" %></br>
+              <%= collection_select(:user, :sector_id, current_user.area.sectors.all, :id, :name) %>
+              <% if resource.errors.messages[:sector] && !resource.errors.messages[:sector].empty? %>
+                <%= "El sector no es válido" %>
+              <%end%>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :internal, "Numero de Interno" %></br>
+              <%= f.number_field :internal, required: true, autofocus: true, class:"form-control" %>
+              <% if resource.errors.messages[:internal] && !resource.errors.messages[:internal].empty? %>
+                <%= "El interno no es válido" %>
+              <%end%>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :current_password, "Contraseña actual" %> <i>(Necesitamos su contraseña actual para confirmar los cambios)</i><br />
+             <%= f.password_field :current_password, required: true,autocomplete: "off",class:"form-control"  %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit "Registrar Sector e Interno", class: "btn btn-success btn-block"%>
+            </div>
+          </form>
+        
+        <%end%>
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>    
+  </div>
+</div>
+
+
+
+<%else%>
+
+
+
+<div class="row">
+  
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Editar</h3>
+      </div>
+      <div class="panel-body">
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+        <form>
+            
+            <div class="form-group">
+              <%= f.label :email, "Email" %><br />
+              <%= f.email_field :email,required: true, autofocus: true, class:"form-control" %>
+              <% if resource.errors.messages[:email] && !resource.errors.messages[:email].empty? %>
+                <%= "El campo esta vacio o el email es invalido" %>
+              <%end%>
+            </div>
+
+           <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+            <% end %>
+
+           <div class="form-group">
+            <%= f.label :area, "Area" %></br>
+            <%= collection_select(:user, :area_id, Area.all, :id, :name) %>
+            <% if resource.errors.messages[:area] && !resource.errors.messages[:area].empty? %>
+                <%= "El area no es válido" %>
+              <%end%>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :current_password, "Contraseña actual" %> <i>(Necesitamos su contraseña actual para confirmar los cambios)</i><br />
+             <%= f.password_field :current_password, required: true,autocomplete: "off",class:"form-control"  %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :"password", "Nueva Contraseña" %> <i>(Dejar en blanco si no desea cambiarla)</i><br />
+              <%= f.password_field :password, autocomplete: "off", class:"form-control" %>
+              <% if resource.errors.messages[:password_confirmation] && !resource.errors.messages[:password_confirmation].empty? %>
+                <%= "La Contraseña no es valida " %>
+              <%end%>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :"password_confirmation", "Confirmar Contraseña" %><br />
+              <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control" %>
+              <% if resource.errors.messages[:password_confirmation] && !resource.errors.messages[:password_confirmation].empty? %>
+                <%= "La Contraseña no es valida " %>
+              <%end%>
+           </div>
+
+           <div class="actions">
+            <%= f.submit "Actualizar Datos", class: "btn btn-success btn-block" %>
+            </div>
+        </form>
+        
+        <%end%>
+        
+      </div>
+    </div>    
+
+  </div>
+</div>
+
+<%end%>

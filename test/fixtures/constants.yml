@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  franco_oro: 1.5
+  proovedor_id: 1
+  ficha_local: 1.5
+  unidad_aire: 1.5
+  bloque_30: 1.5
+
+two:
+  franco_oro: 1.5
+  proovedor_id: 1
+  ficha_local: 1.5
+  unidad_aire: 1.5
+  bloque_30: 1.5

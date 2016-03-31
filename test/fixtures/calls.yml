@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  incoming: false
+  outgoing: false
+  call_date: 2016-02-24
+  call_time: 2016-02-24 17:35:17
+  extension: MyString
+  dial_number: MyString
+  ring: 1
+  duration: 2016-02-24 17:35:17
+  acc_code: 1
+  cd: MyString
+  cost: 1.5
+
+two:
+  incoming: false
+  outgoing: false
+  call_date: 2016-02-24
+  call_time: 2016-02-24 17:35:17
+  extension: MyString
+  dial_number: MyString
+  ring: 1
+  duration: 2016-02-24 17:35:17
+  acc_code: 1
+  cd: MyString
+  cost: 1.5

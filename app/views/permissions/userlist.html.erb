@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Usuarios del Sistema
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-body">
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Nombre de Usuario</th>
+          <th>Email de Usuario</th>
+          <th>Borrar Cuenta</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <% User.all.each do |user| %>
+            <%if user.permission.activo?%>
+              <tr>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                 <td> <li><%= link_to "Borrar Usuario", registration_path(user), data: { confirm: "Esta seguro de borrar a #{user.email}?" }, method: :delete%> </li></td>
+              </tr>
+            <%end%>
+          <% end %>
+        </tbody>
+      </table>        
+      <br>
+    </div>
+  </div>
+</div>

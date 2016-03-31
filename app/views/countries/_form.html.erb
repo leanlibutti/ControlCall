@@ -1,0 +1,41 @@
+<%= form_for(@country) do |f| %>
+  <% if @country.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@country.errors.count, "error") %> prohibited this country from being saved:</h2>
+
+      <ul>
+      <% @country.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.number_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :coef_n1 %><br>
+    <%= f.text_field :coef_n1 %>
+  </div>
+  <div class="field">
+    <%= f.label :coef_n2 %><br>
+    <%= f.text_field :coef_n2 %>
+  </div>
+  <div class="field">
+    <%= f.label :coef_r1 %><br>
+    <%= f.text_field :coef_r1 %>
+  </div>
+  <div class="field">
+    <%= f.label :coef_r2 %><br>
+    <%= f.text_field :coef_r2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @fichan.code %>
+</p>
+
+<p>
+  <strong>Valor sec n:</strong>
+  <%= @fichan.valor_sec_n %>
+</p>
+
+<p>
+  <strong>Valor sec r:</strong>
+  <%= @fichan.valor_sec_r %>
+</p>
+
+<p>
+  <strong>Valor min n:</strong>
+  <%= @fichan.valor_min_n %>
+</p>
+
+<p>
+  <strong>Valor min r:</strong>
+  <%= @fichan.valor_min_r %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @fichan.description %>
+</p>
+
+<%= link_to 'Edit', edit_fichan_path(@fichan) %> |
+<%= link_to 'Back', fichans_path %>

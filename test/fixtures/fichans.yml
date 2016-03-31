@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  valor_sec_n: 1.5
+  valor_sec_r: 1.5
+  valor_min_n: 1.5
+  valor_min_r: 1.5
+  description: MyString
+
+two:
+  code: 1
+  valor_sec_n: 1.5
+  valor_sec_r: 1.5
+  valor_min_n: 1.5
+  valor_min_r: 1.5
+  description: MyString

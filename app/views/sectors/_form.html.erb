@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Subir foto</h3>
+      </div>
+      <div class="panel-body">
+
+        <%= form_for(@sector) do |f| %>
+          <% if @sector.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@sector.errors.count, "error") %> prohibited this sector from being saved:</h2>
+              <ul>
+                <% @sector.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+               <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="field">
+            <%= f.label :name %><br>
+            <%= f.text_field :name %>
+          </div>  
+
+          <div class="form-group">
+            <%= f.submit "Crear Sector" , class: "btn btn-success btn-block" %>
+          </div>
+        <% end %>
+      </div>
+    </div>    
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<%= form_for(@ficha_nacional) do |f| %>
+  <% if @ficha_nacional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ficha_nacional.errors.count, "error") %> prohibited this ficha_nacional from being saved:</h2>
+
+      <ul>
+      <% @ficha_nacional.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :interurbano %><br>
+    <%= f.number_field :interurbano %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_seg %><br>
+    <%= f.text_field :valor_seg %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_min %><br>
+    <%= f.text_field :valor_min %>
+  </div>
+  <div class="field">
+    <%= f.label :constant_id %><br>
+    <%= f.number_field :constant_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

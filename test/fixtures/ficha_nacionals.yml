@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  valor_seg: 1.5
+  valor_min: 1
+  constante_id: 1
+
+two:
+  code: 1
+  valor_seg: 1.5
+  valor_min: 1
+  constante_id: 1

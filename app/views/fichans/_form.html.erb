@@ -1,0 +1,41 @@
+<%= form_for(@fichan) do |f| %>
+  <% if @fichan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fichan.errors.count, "error") %> prohibited this fichan from being saved:</h2>
+
+      <ul>
+      <% @fichan.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.number_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_sec_n %><br>
+    <%= f.text_field :valor_sec_n %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_sec_r %><br>
+    <%= f.text_field :valor_sec_r %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_min_n %><br>
+    <%= f.text_field :valor_min_n %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_min_r %><br>
+    <%= f.text_field :valor_min_r %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

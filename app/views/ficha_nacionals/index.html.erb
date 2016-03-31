@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ficha Nacionals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Interurbano</th>
+      <th>Valor seg</th>
+      <th>Valor min</th>
+      <th>Constant</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ficha_nacionals.each do |ficha_nacional| %>
+      <tr>
+        <td><%= ficha_nacional.interurbano %></td>
+        <td><%= ficha_nacional.valor_seg %></td>
+        <td><%= ficha_nacional.valor_min %></td>
+        <td><%= ficha_nacional.constant_id %></td>
+        <td><%= link_to 'Show', ficha_nacional %></td>
+        <td><%= link_to 'Edit', edit_ficha_nacional_path(ficha_nacional) %></td>
+        <td><%= link_to 'Destroy', ficha_nacional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ficha nacional', new_ficha_nacional_path %>

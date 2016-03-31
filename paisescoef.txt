@@ -1,0 +1,45 @@
+Uruguay 			0,89	0,89	0,72	0,72
+Bolivia 			1,11	0,84	0,89	0,67				
+Brasil 				1,11	0,84	0,89	0,67
+Canada 				1,11	0,84	0,89	0,67
+Chile 				1,11	0,84	0,89	0,67
+EE.UU 				1,11	0,84	0,89	0,67
+Hawai 				1,11	0,84	0,89	0,67
+Paraguay 			1,11	0,84	0,89	0,67
+Puerto Rico 			1,11	0,84	0,89	0,67
+Colombia 			1,61	1,10	1,42	0,97				
+Costa Rica 			1,61	1,10	1,42	0,97
+Cuba  				1,61	1,10	1,42	0,97
+Ecuador 			1,61	1,10	1,42	0,97
+Panama 				1,61	1,10	1,42	0,97
+Peru  				1,61	1,10	1,42	0,97
+Rep. Dominicana 		1,61	1,10	1,42	0,97
+Venezuela 			1,61	1,10	1,42	0,97
+Mexico				1,87	1,87	1,50	1,50
+other America			4,15	3,12	3,32	2,50
+Alemania 			2,07	1,56	1,66	1,25
+Francia 			2,07	1,56	1,66	1,25	
+Espana 				2,07	1,56	1,66	1,25	
+Italia 				2,07	1,56	1,66	1,25
+Reino Unido			2,07	1,56	1,66	1,25
+Austria 			3,79	2,92	3,03	2,33			
+Belgica 			3,79	2,92	3,03	2,33
+Dinamarca 			3,79	2,92	3,03	2,33
+Finlandia 			3,79	2,92	3,03	2,33
+Grecia 				3,79	2,92	3,03	2,33
+Holanda 			3,79	2,92	3,03	2,33
+Noruega 			3,79	2,92	3,03	2,33
+Portugal 			3,79	2,92	3,03	2,33
+Suecia   			3,79	2,92	3,03	2,33
+Suiza				3,79	2,92	3,03	2,33
+Ciudad del Vaticano		2,05	1,57	1,64	1,26
+San Marino			3,74	3,74	2,99	2,99
+other Europa			4,15	3,12	3,32	2,50
+Australia			3,32	2,50	2,66	2,00
+China 				3,32	2,50	2,66	2,00
+Corea Rep. Sur			3,32	2,50	2,66	2,00
+Filipinas		 	3,32	2,50	2,66	2,00
+Hong Kong 			3,32	2,50	2,66	2,00
+Japon 				3,32	2,50	2,66	2,00
+Nueva Zelanda 			3,32	2,50	2,66	2,00
+Other Asia Africa Oceania	4,15	3,12	3,32	2,50

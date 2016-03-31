@@ -1,0 +1,34 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Listado de Permisos Pendientes de Contraseña 
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-body">
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Nombre de Usuario</th>
+          <th>Email de Usuario</th>
+          <th>Aceptar Peticion</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <% User.all.recover.each do |user| %>
+            <%if !user.permission.activo?%>
+              <tr>
+                <td><%= user.name %></td>
+                <td><%= user.email %></td>
+                <td><%= link_to 'Aceptar', recoveradmin_permission_path(user.permission.id), data: { confirm: 'Esta seguro que desea aceptar?' } %></td>
+              </tr>
+            <%end%>
+          <% end %>
+        </tbody>
+      </table>        
+      <br>
+    </div>
+  </div>
+</div>

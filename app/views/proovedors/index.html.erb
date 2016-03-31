@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proovedors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lines</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proovedors.each do |proovedor| %>
+      <tr>
+        <td><%= proovedor.name %></td>
+        <td><%= proovedor.lines %></td>
+        <td><%= link_to 'Show', proovedor %></td>
+        <td><%= link_to 'Edit', edit_proovedor_path(proovedor) %></td>
+        <td><%= link_to 'Destroy', proovedor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proovedor', new_proovedor_path %>

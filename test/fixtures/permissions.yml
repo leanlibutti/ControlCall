@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activo: false
+  user_id: 1
+
+two:
+  activo: false
+  user_id: 1

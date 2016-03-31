@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incoming:</strong>
+  <%= @call.incoming %>
+</p>
+
+<p>
+  <strong>Outgoing:</strong>
+  <%= @call.outgoing %>
+</p>
+
+<p>
+  <strong>Call date:</strong>
+  <%= @call.call_date %>
+</p>
+
+<p>
+  <strong>Call time:</strong>
+  <%= @call.call_time %>
+</p>
+
+<p>
+  <strong>Extension:</strong>
+  <%= @call.extension %>
+</p>
+
+<p>
+  <strong>Dial number:</strong>
+  <%= @call.dial_number %>
+</p>
+
+<p>
+  <strong>Ring:</strong>
+  <%= @call.ring %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @call.duration %>
+</p>
+
+<p>
+  <strong>Acc code:</strong>
+  <%= @call.acc_code %>
+</p>
+
+<p>
+  <strong>Cd:</strong>
+  <%= @call.cd %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @call.cost %>
+</p>
+
+<%= link_to 'Edit', edit_call_path(@call) %> |
+<%= link_to 'Back', calls_path %>
+
+<p><%= link_to "Printable Receipt (PDF)", call_path(@call, format: "pdf") %>
+ </p>

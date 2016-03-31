@@ -1,0 +1,61 @@
+<%= form_for(@call) do |f| %>
+  <% if @call.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@call.errors.count, "error") %> prohibited this call from being saved:</h2>
+
+      <ul>
+      <% @call.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :incoming %><br>
+    <%= f.check_box :incoming %>
+  </div>
+  <div class="field">
+    <%= f.label :outgoing %><br>
+    <%= f.check_box :outgoing %>
+  </div>
+  <div class="field">
+    <%= f.label :call_date %><br>
+    <%= f.date_select :call_date %>
+  </div>
+  <div class="field">
+    <%= f.label :call_time %><br>
+    <%= f.time_select :call_time %>
+  </div>
+  <div class="field">
+    <%= f.label :extension %><br>
+    <%= f.text_field :extension %>
+  </div>
+  <div class="field">
+    <%= f.label :dial_number %><br>
+    <%= f.text_field :dial_number %>
+  </div>
+  <div class="field">
+    <%= f.label :ring %><br>
+    <%= f.number_field :ring %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.time_select :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :acc_code %><br>
+    <%= f.number_field :acc_code %>
+  </div>
+  <div class="field">
+    <%= f.label :cd %><br>
+    <%= f.text_field :cd %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

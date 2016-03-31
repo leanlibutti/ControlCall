@@ -1,0 +1,193 @@
+Afganistan	93	00	
+Letonia	371	00
+Albania	355	00	
+Libano	961	00
+Alemania	49	00	
+Liberia	231	00
+Andorra	376	00	
+Libia	218	00
+Angola	244	00	
+Liechtenstein	423	00
+Antigua y Barbuda	1	011	
+Lituania	370	00
+Arabia Saudita	966	00	
+Luxemburgo	352	00
+Argelia	213	00	
+Macedonia	389	00
+Argentina	54	00	
+Madagascar	261	00
+Armenia	374	00	
+Malasia	60	00
+Australia	61	0011
+Malawi	265	00
+Austria	43	00	
+Maldivas	260	00
+Azerbaiyan	994	00	
+Mali	223	00
+Bahamas	1	011	
+Malta	256	00
+Bahrein	973	00	
+Marruecos	212	00
+Bangladesh	880	00	
+Mauricio	230	00
+Barbados	1	011	
+Mauritania	222	00
+Belgica	32	00	
+Mexico	52	00
+Belice	501	00	
+Micronesia	691	011
+Benin	229	00	
+Moldova	373	00
+Bielorrusia	375	8 pausa 10	
+Monaco	377	00
+Bolivia	591	00	
+Mongolia	976	001
+Bosnia-Herzegovina	387	00	
+Montenegro	382	00
+Botsuana	267	00	
+Mozambique	258	00
+Brasil	55	00
+Myanmar	95	00
+Brunei	673	00	
+Namibia	264	00
+Bulgaria	359	00	
+Nauru	674	00
+Burkina Faso	226	00	
+Nepal	977	00
+Burundi	257	00	
+Nicaragua	505	00
+Butan	975	00	
+Niger	227	00
+Cabo Verde	238		
+Nigeria	234	009
+Camboya	855	001	
+Noruega	47	00
+Cameun	237	00	
+Nueva Zelanda	64	00
+Canada	1	011	
+Oman	968	00
+Chad	235	00	
+Paises Bajos	31	00
+Chile	56	00	
+Pakistan	92	00
+China	86	00	
+Palau	680	011
+Chipre	357	00	
+Panama	507	00
+Colombia	57	005 (Orbitel)	
+Papua Nueva Guinea	675	05
+Comoras	269	00	
+Paraguay	595	00
+Corea del Norte	850	99	
+Peru	51	00
+Corea del Sur	82	001, 002	
+Polonia	48	00
+Costa de Marfil	225	00	
+Portugal	351	00
+Costa Rica	506	00	
+Qatar	974	00
+Croacia	385	00	
+Reino Unido	44	00
+Cuba	53	119	
+Republica Centroafricana	236	00
+Dinamarca	45	00	
+Republica Checa	420	00
+Dominica	1	011	
+Republica del Congo	242	00
+Ecuador	593	00	
+Republica Democratica del Congo	243	00
+Egipto	20	00	
+Republica Dominicana	1	011
+El Salvador	503	00	
+Ruanda	250	00
+Emiratos Arabes Unidos	971	00	
+Rumania	40	00
+Eritrea	291	00	
+Rusia	7	8 pausa 10
+Eslovaquia	421	00	
+Samoa	685	00
+Eslovenia	386	00	
+San Cristobal y Nevis	1	011
+Espana	34	00	
+San Marino	378	00
+Estados Unidos	1	011	
+San Vicente y las Granadinas	1	011
+Estonia	372	00	
+Santa Lucia	1	011
+Etiopia	251	00	
+Santo Tome y Principe	239	00
+Filipinas	63	00	
+Senegal	221	00
+Finlandia	358	00	
+Serbia	381	00
+Fiyi	679	00	
+Seychelles	248	00
+Francia	33	00	
+Sierra Leona	232	00
+Gaban	241	00	
+Singapur	65	001
+Gambia	220	00	
+Siria	963	00
+Georgia	995	8 pausa 10	S
+Somalia	252	00
+Ghana	233	00	
+Sri Lanka	94	00
+Granada	1	011	
+Suazilandia	268	00
+Grecia	30	00	
+Sudafrica	27	00
+Guatemala	502	00	
+Sudan	249	00
+Guinea	224	00	
+Suecia	46	00
+Guinea Ecuatorial	240	00	
+Suiza	41	00
+Guinea-Bissau	245	00	
+Surinam	597	00
+Guyana	592	001	
+Tailandia	66	001
+Haiti	509	00	
+Taiwan	886	002
+Honduras	504	00	
+Tanzania	255	000
+Hungria	36	00	
+Tayikistan	992	8 pausa 10
+India	91	00	
+Timor Oriental	670	00
+Indonesia	62	001, 008	Togo	228	00
+Iran	98	00	
+Tonga	676	00
+Iraq	964	00	
+Trinidad y Tobago	1	011
+Irlanda	353	00	
+Tunez	216	00
+Islandia	354	00	
+Turkmenistan	993	8 pausa 10
+Islas Marshall	692	011	
+Turquia	90	00
+Islas Salomon	677	00	
+Tuvalu	688	00
+Israel	972	00	
+Ucrania	380	00
+Italia	39	00	
+Uganda	256	000
+Jamaica	1	011	
+Uruguay	598	00
+Japon	81	010	
+Uzbekistan	998	8 pausa 10
+Jordania	962	00	
+Vanuatu	678	00
+Kazajstan	7	8 pausa 10	
+Vaticano	379	00
+Kenia	254	000	
+Venezuela	58	00
+Kirguistan	996	00	
+Vietnam	84	00
+Kiribati	686	00	
+Yemen	967	00
+Kuwait	965	00	
+Yibuti	253	00
+Laos	856	00	
+Zambia	260	00
+Lesoto	266	00	
+Zimbabue	263	00

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @proovedor.name %>
+</p>
+
+<p>
+  <strong>Lines:</strong>
+  <%= @proovedor.lines %>
+</p>
+
+<%= link_to 'Edit', edit_proovedor_path(@proovedor) %> |
+<%= link_to 'Back', proovedors_path %>

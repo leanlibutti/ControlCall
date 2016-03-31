@@ -1,0 +1,95 @@
+<%@calls = Call.where("? <= created_at AND created_at <= ? ", @ini, @fin) %>
+<%if @calls.count > 0 %>
+
+<% if @tipo == "entrante" %>
+  <% u=true %>
+<%else%>
+  <% u=false %>
+<%end%>
+
+<%if (@destino.blank?) && (@area.blank?)  %>
+  <%calls = @calls.where(incoming:"#{u}" )%> 
+  <%elsif (@area.blank?) && (@tipo.blank?) %>
+    <%calls = @calls.where(destiny:"#{@destino}")%> 
+    <%elsif (@interno.blank?) && (@destino.blank?) %>
+      <%if @sector.blank? %>
+        <%calls = @calls.where(area_id: @area.id)%>
+        <%elsif @interno.blank? %>
+          <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id)%>
+          <%else%>
+            <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id, internal: @interno)%>
+      <%end%>
+      <%elsif @tipo.blank?%>
+        <%if @sector.blank? %>
+          <%calls = @calls.where(area_id: @area.id, destiny:  "#{@destino}")%>
+        <%elsif @interno.blank? %>
+          <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id, destiny:  "#{@destino}")%>
+          <%else%>
+            <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id, internal: @interno, destiny:  "#{@destino}")%>
+        <%end%>
+        <%elsif @destino.blank?%>
+          <%if @sector.blank? %>
+            <%calls = @calls.where(area_id: @area.id, incoming: u)%>
+          <%elsif @interno.blank? %>
+            <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id, incoming: u)%>
+            <%else%>
+              <%calls = @calls.where(area_id: @area.id, sector_id: @sector.id, internal: @interno, incoming: u)%>
+          <%end%>
+        <%else @area.blank?%>
+          <%calls = @calls.where(incoming: u, destiny: "#{@destino}")%>
+<%end%>
+
+
+
+
+
+
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Busqueda de Llamadas
+  </div>
+</div>
+
+
+<div class="panel panel-success">
+  <div class="panel-body">
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+       	  <th>Tipo de LLamada</th> 	
+          <th>Numero de Dial</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Tiempo de Espera</th>
+          <th>Duracion</th>
+          <th>Costo</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <% calls.each do |call| %>
+              <tr>
+              	<% if call.incoming? %>
+                	<td>Entrante</td>
+                <%else%>
+                	<td>Saliente</td>
+                <%end%>
+                <td><%= call.dial_number %></td>
+                <td><%= call.call_date %></td>
+                <td><%= call.call_time %></td>
+                <td><%= call.ring %></td>
+                <td><%= call.duration %></td>
+                <td><%= call.cost %></td>              
+              </tr>
+          <%end%>
+        </tbody>
+      </table>        
+      <br>
+    </div>
+    <%= link_to "Imprimir Busqueda", search_calls_path(calls, format: "pdf") %>
+  </div>
+</div>
+
+<%end%>
